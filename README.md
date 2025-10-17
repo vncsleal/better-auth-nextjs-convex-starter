@@ -4,16 +4,16 @@ A comprehensive demo application showcasing Better Auth UI components with Next.
 
 ## Features
 
-- ✅ **Complete Authentication**: Sign up, sign in, password reset, email verification
-- ✅ **Social Providers**: GitHub OAuth integration
-- ✅ **User Management**: Profile updates, avatar uploads, account settings
-- ✅ **Security Features**: Two-factor authentication, passkeys, session management
-- ✅ **Organization Support**: Multi-tenant organizations with role-based access
-- ✅ **API Keys**: Secure API key management for programmatic access
-- ✅ **Modern UI**: shadcn/ui components with Tailwind CSS and Better Auth UI
-- ✅ **Localization**: Complete Portuguese (Brazil) translations included
-- ✅ **Type Safety**: Full TypeScript support with Convex's generated types
-- ✅ **Demo Pages**: Comprehensive showcase of all Better Auth UI components
+- **Complete Authentication**: Sign up, sign in, password reset, email verification
+- **Social Providers**: GitHub OAuth integration
+- **User Management**: Profile updates, avatar uploads, account settings
+- **Security Features**: Two-factor authentication, passkeys, session management
+- **Organization Support**: Multi-tenant organizations with role-based access
+- **API Keys**: Secure API key management for programmatic access
+- **Modern UI**: shadcn/ui components with Tailwind CSS and Better Auth UI
+- **Localization**: Complete Portuguese (Brazil) translations included
+- **Type Safety**: Full TypeScript support with Convex's generated types
+- **Demo Pages**: Comprehensive showcase of all Better Auth UI components
 
 ## Quick Start
 
