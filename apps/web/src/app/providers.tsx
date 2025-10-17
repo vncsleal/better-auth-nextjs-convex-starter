@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 import { authClient } from "@/lib/auth-client";
-import { ptBR } from "@/lib/localization/pt-br";
 
 export function Providers({ children }: { children: ReactNode }) {
   const router = useRouter();
@@ -62,7 +61,7 @@ export function Providers({ children }: { children: ReactNode }) {
           });
         },
       }}
-      localization={ptBR}
+      
     >
       {children}
     </AuthUIProvider>
