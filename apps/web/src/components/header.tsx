@@ -16,7 +16,7 @@ export function Header() {
 	const showBackButton = pathname.startsWith("/demo/");
 
 	return (
-		<header className="relative">
+		<header className="fixed top-4 left-0 right-0 z-50">
 			<div className="container max-w-7xl mx-auto px-2">
 				<div className="flex items-center justify-center py-4">
 					<div className="flex items-center w-full">
