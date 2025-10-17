@@ -21,12 +21,6 @@ export function DemoLayout({
 }: DemoLayoutProps) {
   return (
     <div className="container max-w-5xl mx-auto py-12 px-6">
-      <div className="mb-8">
-        <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-          ← Back to Components
-        </Link>
-      </div>
-
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-4">
           <h1 className="text-4xl font-bold">{title}</h1>
