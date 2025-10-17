@@ -1,4 +1,3 @@
-import { UpdateFieldCard } from "@daveyplate/better-auth-ui";
 import { DemoLayout } from "@/components/demo-layout";
 
 export default function CustomFieldsDemo() {

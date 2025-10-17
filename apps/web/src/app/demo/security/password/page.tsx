@@ -19,7 +19,7 @@ export default function ChangePasswordDemo() {
         <div>
           <h3 className="font-semibold mb-4">With Social Account (Set Password)</h3>
           <p className="text-sm text-muted-foreground mb-4">
-            When user has no password (social login only), shows "Set Password" button
+            When user has no password (social login only), shows &ldquo;Set Password&rdquo; button
           </p>
           <ChangePasswordCard
             accounts={[{ providerId: "google" }]}

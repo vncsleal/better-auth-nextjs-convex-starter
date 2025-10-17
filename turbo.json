@@ -1,7 +1,16 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-    "build": {},
+    "build": {
+      "env": [
+        "CONVEX_DEPLOYMENT",
+        "GITHUB_CLIENT_ID",
+        "GITHUB_CLIENT_SECRET",
+        "NEXT_PUBLIC_CONVEX_URL",
+        "NEXT_PUBLIC_CONVEX_SITE_URL",
+        "SITE_URL"
+      ]
+    },
     "dev": {},
     "lint": {}
   }

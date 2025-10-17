@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 interface DemoLayoutProps {
   children: React.ReactNode;
   title: string;
