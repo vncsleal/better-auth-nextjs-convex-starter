@@ -17,7 +17,7 @@ export default function SignOutPage() {
             onSuccess: () => {
               router.push("/");
             },
-            onError: (ctx) => {
+            onError: (ctx: { error: Error }) => {
               console.error("Sign out error:", ctx.error);
               router.push("/");
             },
