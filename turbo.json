@@ -1,7 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
   "tasks": {
     "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
       "env": [
         "CONVEX_DEPLOYMENT",
         "GITHUB_CLIENT_ID",
@@ -11,7 +14,24 @@
         "SITE_URL"
       ]
     },
-    "dev": {},
-    "lint": {}
-  }
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^build"]
+    },
+    "type-check": {
+      "dependsOn": ["^build"],
+      "outputs": ["*.tsbuildinfo"]
+    },
+    "clean": {
+      "cache": false
+    }
+  },
+  "globalEnv": [
+    "NODE_ENV",
+    "CONVEX_DEPLOYMENT",
+    "NEXT_PUBLIC_CONVEX_URL"
+  ]
 }

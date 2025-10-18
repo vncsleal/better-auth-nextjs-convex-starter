@@ -1,0 +1,14 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "./base.js",
+  "files": [
+    "base.js",
+    "postcss.js"
+  ],
+  "devDependencies": {
+    "tailwindcss": "^4"
+  }
+}

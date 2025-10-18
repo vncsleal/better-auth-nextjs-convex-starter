@@ -1,0 +1,20 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "library.js",
+    "next.js",
+    "react-internal.js"
+  ],
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/eslint": "^9.6.0",
+    "eslint-config-next": "15.5.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint": "^9",
+    "typescript": "^5.7.3"
+  }
+}

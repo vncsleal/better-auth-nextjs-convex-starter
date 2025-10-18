@@ -1,9 +1,13 @@
 {
-  "name": "convex",
+  "name": "@repo/convex",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "convex dev"
+    "dev": "convex dev",
+    "build": "echo 'Convex backend - no build needed'",
+    "lint": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf node_modules .turbo convex/_generated"
   },
   "dependencies": {
     "@convex-dev/better-auth": "^0.9.6",
@@ -11,6 +15,7 @@
     "convex": "^1.27.0"
   },
   "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
     "prettier": "^3.5.3",
     "typescript": "^5"
   }
