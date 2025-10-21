@@ -33,7 +33,7 @@ export function Header() {
 							</Button>
 						)}
 
-						<Card className="flex-1 px-6 py-1">
+						<Card className="flex-1 px-6 py-1 bg-background">
 							<div className="flex items-center justify-between h-10">
 								<div className="flex items-center gap-4">
 									<Link href="/" className="flex items-center transition-opacity">
