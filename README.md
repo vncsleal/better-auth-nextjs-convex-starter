@@ -75,10 +75,6 @@ GITHUB_CLIENT_SECRET=your_github_client_secret_here
    - **Authorization callback URL**: `http://localhost:3000/api/auth/callback/github`
 4. Copy the Client ID and Client Secret to your `.env.local` file
 
-> **Important**: The Better Auth server handler is located at `apps/web/src/app/api/auth/[...all]/route.ts`. 
-> This serves all auth endpoints at `/api/auth/*`. The `AuthUIProvider` is configured with `basePath="/api/auth"` to match this location.
-> Note: We use `/api/auth` instead of `/auth` because `/auth` contains page routes (sign-in, sign-up, etc.) which would conflict with a catch-all route handler.
-
 ## Project Structure
 
 ```
