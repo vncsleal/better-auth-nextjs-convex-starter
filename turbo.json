@@ -11,7 +11,9 @@
         "GITHUB_CLIENT_SECRET",
         "NEXT_PUBLIC_CONVEX_URL",
         "NEXT_PUBLIC_CONVEX_SITE_URL",
-        "SITE_URL"
+        "SITE_URL",
+        "CONVEX_URL",
+        "BETTER_AUTH_SECRET"
       ]
     },
     "dev": {
