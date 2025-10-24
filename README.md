@@ -72,8 +72,12 @@ GITHUB_CLIENT_SECRET=your_github_client_secret_here
 3. Fill in the details:
    - **Application name**: Your app name
    - **Homepage URL**: `http://localhost:3000`
-   - **Authorization callback URL**: `http://localhost:3000/api/auth/callback/github`
+   - **Authorization callback URL**: `http://localhost:3000/auth/callback/github`
 4. Copy the Client ID and Client Secret to your `.env.local` file
+
+> **Important**: The Better Auth server handler is located at `apps/web/src/app/auth/[...all]/route.ts`. 
+> This serves all auth endpoints at `/auth/*` which matches the default `basePath` expected by Better Auth UI.
+> If you move this to `/api/auth`, you must update the `AuthUIProvider` with `basePath="/api/auth"`.
 
 ## Project Structure
 
@@ -82,10 +86,8 @@ better-auth-nextjs-convex-starter/
 ├── apps/web/                    # Next.js frontend
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── api/
-│   │   │   │   └── auth/
-│   │   │   │       └── [...all]/    # Catch-all auth API routes
-│   │   │   ├── auth/             # Auth pages
+│   │   │   ├── auth/             # Auth routes
+│   │   │   │   ├── [...all]/     # Better Auth API handler (must be at /auth, not /api/auth)
 │   │   │   │   ├── forgot-password/
 │   │   │   │   ├── sign-in/
 │   │   │   │   ├── sign-out/
